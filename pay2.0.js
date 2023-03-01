@@ -1,52 +1,51 @@
-
+let timesInOne;
+dialogs.input("请输入施肥次数").then(n=>{timesInOne=n;});
+sleep(1500);
 auto.waitFor();
 setScreenMetrics(1080, 2240);
 home();
 launchApp("支付宝");
-sleep(3000);
-toast("我来讲个更浪漫的故事：")
+sleep(2000);
+console.show();
+log("好戏就要开场了，客官稍等……");
 
-var baba_nongchang = text('芭芭农场').findOne(2000);
-var click_true = click(baba_nongchang.bounds().centerX(), baba_nongchang.bounds().centerY());
-sleep(5000);
-
-var renwu=text("任务列表").depth(15).findOne();
-renwu.click();
-sleep(3000);
+var farm = text('芭芭农场').findOne();
+var click_true = click(farm.bounds().centerX(), farm.bounds().centerY());
+log("尊敬的任小风，任先锋，绝yi，不找对象不换头像的人，头像像中老年的人inneace，human without balls, 憋屎第一人，美而不自知的敏妹，你好。");
+sleep(4000);
+log("让我们来到第一项服务，广告服务；");
+var task=text("任务列表").depth(15).findOne();
+task.click();
+sleep(2500);
 click(900, 1010);
 sleep(1000);
 click(900, 1200);
 sleep(2000);
 swipe(500, 1500, 500, 500, 1000);
-sleep(16000);   
+sleep(15500);   
 swipe(500, 500, 500, 1500, 1000);
-sleep(300);
+sleep(400);
 back();
 sleep(1000);
-
-
  for (var j = 0; j < 3; j++) {
       click(900, 1400);
       sleep(2000);
 
-    
       swipe(500, 1500, 500, 500, 1000);
-      sleep(16000);   
+      sleep(15500);   
       swipe(500, 500, 500, 1500, 1000);
       sleep(300);
-
       back();
       sleep(1000);
- 
      }
 click(500, 400);
 
-
+log("电视服务结束了，该起床浇树了；");
 var i = 0;
-while(i<50){
+while(i<timesInOne){
   i++;
   click(500, 1800);
   sleep(1000);
  
  }
-toast("爱情树更长啊长");
+log("本次服务到此结束，请自觉打赏。");
