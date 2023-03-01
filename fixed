@@ -11,7 +11,8 @@ sleep(3500);
 var i = 0;
 while(i<50){
   i++;
-  click(500, 1800);
+toast(i);
+  \\click(500, 1800);
   sleep(1000);
  
  }
