@@ -1,4 +1,5 @@
-var timesInOne=rawInput("旅途开始之前，先请敏妹输入施肥次数：");
+var timesInOne = dialogs.input("旅途开始之前，先请敏妹输入施肥次数：");
+timesInOne = timesInOne+0;
 
 setScreenMetrics(1080, 2240);
 home();
