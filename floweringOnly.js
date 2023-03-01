@@ -1,4 +1,5 @@
-var timesInOne = dialogs.input("旅途开始之前，先请敏妹输入施肥次数：");
+var timesInOne = 0;
+timesInOne = dialogs.input("旅途开始之前，先请敏妹输入施肥次数：");
 
 
 setScreenMetrics(1080, 2240);
@@ -13,7 +14,7 @@ sleep(3500);
 var i = 0;
 while(i<timesInOne){
   i++;
-  toast(i);
+  toast("1");
   \\click(500, 1800);
   sleep(1000);
  
