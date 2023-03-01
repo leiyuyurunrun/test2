@@ -14,7 +14,7 @@ sleep(3500);
 var i = 0;
 while(i<timesInOne){
   i++;
-  toast("1");
+  click(500, 1800);
   sleep(1000);
  
  }
