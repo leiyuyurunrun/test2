@@ -1,6 +1,5 @@
-let timesInOne;
-dialogs.input("请输入施肥次数").then(n=>{timesInOne=n;});
-sleep(1500);
+var timesInOne=rawInput("旅途开始之前，先请敏妹输入施肥次数：");
+sleep(1000);
 auto.waitFor();
 setScreenMetrics(1080, 2240);
 home();
