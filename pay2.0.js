@@ -1,6 +1,5 @@
-var timesInOne = dialogs.input("旅途开始之前，先请敏妹输入施肥次数：");
-timesInOne = timesInOne+0;
-auto.waitFor();
+var timesInOne = 0;
+timesInOne = dialogs.input("旅途开始之前，先请敏妹输入施肥次数：");
 setScreenMetrics(1080, 2240);
 home();
 launchApp("支付宝");
@@ -15,7 +14,7 @@ sleep(4000);
 log("让我们来到第一项服务，广告服务；");
 var task=text("任务列表").depth(15).findOne();
 task.click();
-sleep(2500);
+sleep(1500);
 click(900, 1010);
 sleep(1000);
 click(900, 1200);
@@ -44,7 +43,7 @@ var i = 0;
 while(i<timesInOne){
   i++;
   click(500, 1800);
-  sleep(1000);
+  sleep(800);
  
  }
-log("本次服务到此结束，请自觉打赏。");
+log("本次服务到此结束，请自觉打赏leiyuyu。");
